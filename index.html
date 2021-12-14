@@ -5,7 +5,7 @@
 <head>
   <meta charset = "utf-8">
   <meta name = "viewport" content = "width = device-width, initial scale = 1">
-  <title>Insects at New Jersey Institute of Technology</title>
+  <title>Home</title>
   <link rel = "stylesheet" href = "index.css">
   <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,7 +14,7 @@
 
 <body>
   <header>
-    <a href="../index.html"><img src="logo.jpg" alt="Insects at NJIT" style="width:42px;height:42px;"></a>
+    <a href="../index.html"><img src="../logo.jpg" alt="Insects at NJIT" style="width:42px;height:42px;"></a>
     <h1>Insects at New Jersey Institute of Technology</h1>
   </header>
     <nav id="nav_menu">
@@ -29,19 +29,83 @@
               <li><a href="environment.html">Environmental Impact</a></li>
               <li><a href="media.html">Media</a></li>
             </ul>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
     	</ul>
     </nav>
     <main>
-      <section>
-        <h1>Welcome to Insects at New Jersey Insititute of Technology</h1>
+    	<section>
+        <br>
+        <br>
+        <h1><b>Welcome to Insects at New Jersey Insititute of Technology</b></h1>
+        <br>
+        <img src="http://media.tumblr.com/tumblr_lu60xo5EEi1ql1l0v.gif"><img src="http://media.tumblr.com/tumblr_lq7ieqS6uC1ql1l0v.gif" style="width: 6%;"><img src="http://media.tumblr.com/tumblr_lu60xo5EEi1ql1l0v.gif">
+        <hr>
+        <br>
+        <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="logo.jpg" alt="Logo" style="width:100%;">
+            </div>
+            <div class="item">
+              <img src="class-pic.jpg" alt="Class Pic" style="width:100%;">
+            </div>
+            <div class="item">
+              <img src="njitbug.jpg" alt="News" style="width:100%;">
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <br>
+        <a href="index.html"><h6>Return to Home Page</h6></a>
       </section>
       <aside>
-      <a href="index.html"><h6>Return to Home page</h6></a>
+        <h4><b>&hearts; &emsp; Fun Stuff &emsp; &hearts;</b></h4>
+        <br>
+        <hr>
+        <br>
+        <p><b>
+          <small>POLL</small><br><br>
+          Which insect are you voting as class president?
+        </b></p>
+        <hr>
+        <form method = "post" action="http://server1" id = "president">
+        <input name = "president" type = "radio" value = "spotty"/>
+        <br>
+        <label for = "spotty"><small>Spotty the Lanternfly, of course!</small></label>
+        <hr>
+        <input name = "president" type = "radio" value = "ant"/>
+        <br>
+        <label for = "ant"><small>None other than NJIT's Sweetheart, Common Black Ant!</small></label>
+        <hr>
+        <input name = "president" type = "radio" value = "bee"/>
+        <br>
+        <label for = "bee"><small>Honeybee deserves it for all that hard work!</small></label>
+        <hr>
+        <br>
+        <input type="submit" value="Submit">
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <footer>
+          <p>&copy; 2021 Frnchs NJIT, Newark, NJ 07102</p>
+        </footer>
       </aside>
     </main>
-    <footer>
-      <p>&copy; 2021 Frnchs NJIT, Newark, NJ 07102</p>
-    </footer>
 </body>
 </html>
