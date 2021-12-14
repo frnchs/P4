@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en">
+<!-- DEVELOPER: Francheska Honda, IS117-101, Fall 2021 -->
+
+<head>
+  <meta charset = "utf-8">
+  <meta name = "viewport" content = "width = device-width, initial scale = 1">
+  <title>Contact</title>
+  <link rel = "stylesheet" href = "contact.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="../index.html"><img src="logo.jpg" alt="Insects at NJIT" style="width:42px;height:42px;"></a>
+    <h1>Insects at New Jersey Institute of Technology</h1>
+  </header>
+    <nav id="nav_menu">
+    	<ul>
+       		<li><a href="../index.html">Home</a></li>
+       		<li><a href="mission.html">Mission</a></li>
+       		<li><a href="whynjit.html">Why We Chose NJIT</a></li>
+       		<li><a href="highlanders.html">Meet The Highlanders</a></li>
+       		<li><a href="student-life.html">Student Life</a>
+            <ul>
+              <li><a href="buzz.html">What's The Buzz</a></li>
+              <li><a href="environment.html">Environmental Impact</a></li>
+              <li><a href="media.html">Media</a></li>
+            </ul>
+          <li><a href="contact.html">Contact Us</a></li>
+    	</ul>
+    </nav>
+    <main>
+    	<section>
+        <form method = "post" action="http://server1" id = "contactform">
+          <label for = "prefix">Prefix:</label>
+          <select name = "prefix" id = "prefix" form = "contactform">
+            <option value = "mr">Mr.</option>
+            <option value = "ms">Ms.</option>
+            <option value = "mrs">Mrs.</option>
+            <option value = "mx">Mx.</option>
+            <option value = "other">Other</option>
+          </select>
+          <br><br>
+          <label for = "name">Name:</label>
+          <input type = "text" name = "name" id = "name" form = "contactform">
+          <br><br>
+          <label for = "contact-info">Contact Information:</label>
+          <input type = "text" name = "contact-info" id = "contact-info" form = "contactform">
+          <br><br>
+          <label for = "about">What's a good looking person like you doing in a place like this? I have a...</label>
+          <select name = "about" id = "about" form = "contactform">
+            <option value = "comment">Comment</option>
+            <option value = "suggestion">Suggestion</option>
+            <option value = "concern">Concern</option>
+            <option value = "request">Request for Information</option>
+            <option value = "publicity">Publicity-Related Request</option>
+            <option value = "friends">Newfound Urge to Become Friends</option>
+            <option value = "other">Other</option>
+          </select>
+          <br><br>
+          <label for = "message">Message:</label>
+          <br><br>
+          <textarea name = "message" id = "message" rows = "4" cols = "50">Leave us a love letter in this little box!</textarea>
+          <br>
+          <p>Can we write back?</p>
+          <input name = "reply" type = "radio" value = "yes"/>
+          <label for = "yes">Yes, please feel free to reach out to me!</label>
+          <input name = "reply" type = "radio" value = "no"/>
+          <label for = "no">No, thank you! Just wanted to say my piece!</label>
+          <br><br>
+          <input type="submit" value="Submit">
+          <br>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2021 Frnchs NJIT, Newark, NJ 07102</p>
+    </footer>
+</body>
+</html>
